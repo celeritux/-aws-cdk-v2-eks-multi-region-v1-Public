@@ -2,7 +2,6 @@ import * as cdk from 'aws-cdk-lib';
 import * as iam from 'aws-cdk-lib/aws-iam';
 import * as eks from 'aws-cdk-lib/aws-eks';
 import * as ec2 from 'aws-cdk-lib/aws-ec2';
-import { PhysicalName } from 'aws-cdk-lib/core';
 import { Construct } from 'constructs';
 
 export interface EksProps extends cdk.StackProps {
@@ -58,7 +57,7 @@ export class ClusterStack extends cdk.Stack {
 function createEKSClusterDeployRole(scope: Construct, id: string): iam.Role {
 
   const role = new iam.Role(scope, id, {
-    roleName: PhysicalName.GENERATE_IF_NEEDED,
+    roleName: cdk.PhysicalName.GENERATE_IF_NEEDED,
     assumedBy: new iam.AccountRootPrincipal()
   });
   return role;
