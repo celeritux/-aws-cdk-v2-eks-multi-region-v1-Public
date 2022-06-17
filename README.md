@@ -1,8 +1,5 @@
 # Manage your EKS Cluster with CDK
-This repository holds the sample app used in third lab of *[Manage your EKS Cluster with CDK](http://demogo-multiregion-eks.s3-website.ap-northeast-2.amazonaws.com/ko/)* Hands-on Lab.
-
-Please follow [this link](http://demogo-multiregion-eks.s3-website.ap-northeast-2.amazonaws.com/ko/) to play with the lab. :)
-
+This repository holds the sample app used in third lab of *[Manage your EKS Cluster with CDK](https://catalog.us-east-1.prod.workshops.aws/workshops/c15012ac-d05d-46b1-8a4a-205e7c9d93c9/en-US)* Hands-on Lab.
 
 ## Related Repository
 * [Skeleton Repository](https://github.com/yjw113080/aws-cdk-eks-multi-region-skeleton): You would clone this repository and build up the code as going through the steps in the lab.
